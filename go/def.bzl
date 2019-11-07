@@ -405,7 +405,7 @@ def _emit_go_link_action(
     gc_linkopts, extldflags = _extract_extldflags(gc_linkopts, extldflags)
 
     link_cmd = [
-        ctx.file.go_tool.path,
+        "/usr/local/go/bin/go",
         "tool",
         "link",
         "-L",
